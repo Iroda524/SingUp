@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #4d515d;
+        }
+
+        .conteiner{
+            width: 68%;
+            height: 84vh;
+            display: flex;
+            margin: 7.5vh auto;
+            border-radius: 4px;
+            box-shadow: -5px 5px 10px rgb(59, 59, 59);
+        }
+        
+        .left{
+            position: relative;
+            width: 60%;
+            height: 100%;
+            display: flex;
+            /* justify-content: space-evenly; */
+            flex-flow: column;
+            border-radius: 4px 0 0 4px;
+            background-color: white;
+        }
+
+        .text{
+            width: 70%;
+            height: 20%;
+            font-family: sans-serif;
+            font-size: 0.75rem;
+            color: rgba(128, 128, 128, 0.801);
+            margin: 12% 0 3% 10%;
+        }
+        
+        h2{
+            font-weight: lighter;
+            font-size: 2.5rem;
+            color: rgb(59, 59, 59);
+            padding-bottom: 12px;
+        }
+
+        .clr{
+            clear: both;
+        }
+
+        .sing_up{
+            width: 100%;
+            height: 40%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-flow: column;
+        }
+        
+        .sing_up button{
+            width: 80%;
+            height: 25%;
+            font-size: 0.7rem;
+            font-weight: bolder;
+            border: 0.5px solid rgb(223, 222, 222);
+            border-radius: 3px;
+            color: #928b8c;
+            background-color: rgba(255, 255, 255, 0.897);
+            transition: 0.5s ease all;
+        }
+
+        button:hover{
+            border: none;
+            background-color: honeydew;
+            color: grey;
+            box-shadow: 4px 4px 8px rgba(128, 128, 128, 0.801);
+            cursor: pointer;
+        }
+
+        button img{
+            width: 20px;
+            height: 20px;
+            float: left;
+            margin-left: 20px;
+        }
+
+        .sign_up_email{
+            position: absolute;
+            top: 85%;
+            width: 100%;
+            font-family: sans-serif;
+            align-items: center;
+            border-top: rgb(223, 222, 222) 1px solid;
+        }
+        
+        .sign_up_email p{
+            margin: 5px auto;
+            display: inline-block;
+            padding: 5% 15% 0 10%;
+            color: rgb(59, 59, 59);
+            font-size: 0.75rem;
+        }
+
+        .sign_up_email strong{
+            font-size: 0.6rem;
+            font-weight: bolder;
+            color: rgba(128, 128, 128, 0.801);
+            transition: 0.8s ease all;
+        }
+
+        .sign_up_email strong:hover{
+            color: rgba(0, 0, 0, 0.897);
+            border-color: rgba(201, 191, 191, 0.801);
+            border: none;
+            cursor: pointer;
+        }
+
+        .right{
+            display: flex;
+            width: 40%;
+            height: 100%;
+        }
+
+        .right img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="left">
+            <div class="text">
+                <h2>Become a member</h2>
+                <p>
+                    Use social network to join us instently.<br> 
+                    You won't spent any time confirming those boring emails.
+                </p>
+            </div>
+
+            <div class="sing_up">
+                <button>
+                    <img src="./img/googleplus.svg" alt="Googleplus">
+                    <strong>SIGN UP WITH GOOGLE+</strong>
+                </button>
+                    
+                <button>
+                    <img src="./img/facebook.svg" alt="facebook">
+                    <strong>SIGN UP WITH FACEBOOK</strong>
+                </button>
+
+                <button>
+                    <img src="./img/twitter.svg" alt="twitter">
+                    <strong>SIGN UP WITH TWITTER</strong>
+                </button>
+            </div>
+            
+            <div class="sign_up_email">
+                <p><b>You can still sign up with your email adress</b></p>
+                <a href="./signup.html"><strong>SIGN UP WITH EMAIL</strong></a>
+            </div>
+        </div><!--
+        --><div class="right">
+            <img src="./img/side.jpg" alt="street">
+        </div>
+    </div>
+</body>
+</html>
